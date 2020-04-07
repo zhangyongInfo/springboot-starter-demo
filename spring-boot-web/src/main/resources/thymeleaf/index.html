@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Thymeleaf快速入门-Hello Thymeleaf</title>
+</head>
+<body>
+<!--国际化示例-->
+<p th:text="#{messageSourceDemo.text1}">name</p>
+<!--读取变量示例-->
+<p th:text="${name}">name</p>
+<p th:text="'Hello！ ' + ${name} + '!'">hello world</p>
+<p th:text="|Hello！ ${name}!|">hello world</p>
+</body>
+</html>

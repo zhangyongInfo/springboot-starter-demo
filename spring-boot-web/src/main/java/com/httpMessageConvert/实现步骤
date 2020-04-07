@@ -1,0 +1,4 @@
+1.编写自己的消息转换类MyHttpMessageConvert, 继承AbstractHttpMessageConverter,并重写相关方法
+2.编写config类MyHttpMessageConvertConfig, 被@Configuration注解,
+3.编写controller类MyHttpMessageConvertController, 相关方法需要配置consumes和produces
+4.postman调试记录设置请求的 context-Type和accecpt
