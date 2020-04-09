@@ -1,0 +1,5 @@
+1.编写数据源配置MyJdbcDataSourceConfig, 申明不同的key前缀, 同时@Configuration标注, 被@ComponentScan扫描或通过springboot自动装配
+    1.2 申明2个DataSource并实例化对象
+    1.3 使用DataSource产生JdbcTemplate
+2.application配置相关多数据源的链接信息
+3.controller使用
