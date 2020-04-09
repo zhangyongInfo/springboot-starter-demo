@@ -1,4 +1,4 @@
-package com.myProperties;
+package com.properties;
 
 import com.template.FormatTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
