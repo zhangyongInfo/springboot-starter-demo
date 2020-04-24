@@ -12,6 +12,7 @@
     <artifactId>spring-boot-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-web</name>
+    <packaging>war</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -90,7 +91,13 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.6</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <!-- 打成war的时候打开注释，本地开发用内嵌tomcat时加上注释 -->
+            			<scope>provided</scope>
+<!--            <scope>compile</scope>-->
+        </dependency>
     </dependencies>
 
     <build>
